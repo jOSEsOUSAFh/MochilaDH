@@ -1,5 +1,3 @@
-function imc(altura,peso){
-    console.log(peso / (altura * altura))
-}
+const  imc = (altura,peso) => peso / (altura * altura)
 
-imc(1.71,60)
+console.log(imc(1.70,70))
