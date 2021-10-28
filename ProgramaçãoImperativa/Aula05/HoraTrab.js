@@ -1,5 +1,8 @@
 function horatrab(salario){
-console.log(salario / 160)
+const total = salario / 160
+
+console.log(total)
+return `$ ${total.toFixed(2).replace(`.`,`,`)}`
 }
 
-horatrab(1800)
+console.log(horatrab(1800))
