@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.transp{
+    background-color: rgba(0, 0, 0, 0.418);
+    margin-top: 0%;
+}
+
+body{
+    background-image: url("imagens/Elevador.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0%;
+}
+
+.Titulo{color: white;
+text-align: center;
+font-size: 40px;
+background-color: #02010185;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    font-weight: 200;
+    margin: 0%;
+ }
+
+.resumo{text-align: center;
+color: white;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+
+
+
+
+iframe{display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+h2.Curiosidades{
+    color: white;
+    font-family: 'Dancing Script', Arial ;
+    font-size: 40px;
+    text-align: center;
+}
+
+li{color: white;
+font-family: Arial, Helvetica, sans-serif;
+text-align: left;
+font-size: 20px;}
+
+footer{
+    text-align: center;
+}
