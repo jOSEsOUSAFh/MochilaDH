@@ -27,7 +27,7 @@ console.log(mediaDeTresN(3,5,6));
 const calculaPorcentagem = (ValorA, ValorB) => {
     const total1 = ValorA * Divisão(ValorB,100)
     return total1
-}
+}   
 console.log(calculaPorcentagem(160,25));
 
 
