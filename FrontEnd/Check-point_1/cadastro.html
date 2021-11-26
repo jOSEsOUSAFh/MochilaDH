@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/cad.css" media="screen" />
+    <title>Cadastro</title>
+</head>
+<body>
+<div class="banner">
+
+ 
+    <p class="animated-word">Cadastro</p>
+
+    <form class="formulario" action="/registro" method="post"> 
+        
+        
+        
+            <h1 class="formulario_enunciado">Dados Pessoais</h1>
+            
+        <label for="usuario">Usuario</label>
+        <input class="formdados" type="text" name="usuario" id="usuario">
+            
+            
+        
+        <label for="senha">Senha</label>
+        <input class="formdados" type="password" name="senha" id="senha">
+
+
+   
+        <label for="e-mail">E-mail</label>
+        <input class="formdados" type="email" name="e-mail" id="e-mail">
+    
+        <label for="telefone">telefone</label>
+        <input class="formdados" type="tel" name="telefone" id="telefone">
+
+   
+        <div class="data">
+            <label for="data">Data de nascimento</label>
+            <input class="formdados" type="date" name="data" id="data">
+        
+
+        </div>
+        
+        <h1 class="formulario_enunciado">Possui mais de 18 anos?</h1>
+        <div>   
+        <input 
+                type="radio"
+                id="sim" 
+                name="idade" 
+                value="sim" 
+            >
+            <label class="formulario_rotulo" for="sim">Sim</label>
+
+            <input 
+                type="radio" 
+                id="nao"
+                name="idade" 
+                value="nao" 
+            >
+            <label class="formulario_rotulo" for="nao">Não</label>
+     
+        </div>
+
+
+        <h1 class="formulario_enunciado">Escolha um ponto turistico que deseja está proximo</h1>
+        <select class="formdados">
+            name="select"
+        >
+            <option class="formulario_opcoes" selected disabled>Lugares para estadia</option>
+                <option value="FarolDaBarra">Farol da Barra</option>
+                <option value="Pelourinho">Pelourinho</option>
+                <option value="Ribeira">Ribeira</option>
+    
+        </select>
+
+
+
+        <h1 class="formulario_enunciado">Interesses na cidade.</h1>
+                    <article>
+                        <input 
+                            type="checkbox" 
+                            id="turista"
+                            name="turista" 
+                            value="turista" 
+                        >
+                        <label class="formulario_rotulo" for="turista">Turista.</label>
+                    </article>
+
+                    <article>
+                        <input 
+                            type="checkbox" 
+                            id="Residente"
+                            name="Residente" 
+                            value="Residente" 
+                        >
+                        <label class="formulario_rotulo" for="turista">Residente.</label>
+                    </article>
+
+                    <article>
+                        <input 
+                            type="checkbox" 
+                            id="Estudante"
+                            name="Estudante" 
+                            value="Estudante" 
+                        >
+                        <label class="formulario_rotulo" for="turista">Estudante.</label>
+                    </article>      
+
+                    <button type="submit">Cadastrar</button> 
+                    <button type="reset">Limpar</button>
+
+    </form>
+ 
+</div>
+</body>
+</html>

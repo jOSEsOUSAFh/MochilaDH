@@ -13,15 +13,34 @@ body{
     margin: 0%;
 }
 
-.Titulo{color: white;
-text-align: center;
-font-size: 40px;
-background-color: #02010185;
-    font-family: 'Dancing Script', cursive;
-    padding: 10px;
-    font-weight: 200;
-    margin: 0%;
- }
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+
+}
+.animated-word {
+	font-family: Helvetica;
+	letter-spacing: 0.4em;
+	font-weight: 60;
+	font-size: 40px;
+	text-align: center;
+	color: #ffffff;
+  cursor: pointer;
+  max-width: 500px; 
+
+  
+
+  
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+	color: rgb(239, 255, 14);
+  
+}
+
 
 .resumo{text-align: center;
 color: white;
