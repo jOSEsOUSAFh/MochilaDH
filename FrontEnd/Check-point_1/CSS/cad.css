@@ -2,28 +2,22 @@ body{
     background-image: url("imagens/Elevador.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-attachment: fixed;
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-    max-width: 320px;
-    max-height: 400px;
+
 }
 
 
 
 .animated-word {
-    top: 200px;
-    left: 280px;
-    position: relative;
-    right: 600px;
+
 	font-family: Helvetica;
 	letter-spacing: 0.4em;
 	font-weight: 60;
 	font-size: 60px;
 	color: #ffffff;
     cursor: pointer;
-  
+    display: flex;
+    float: left;
+
 }
 
 .animated-word:hover {
@@ -31,21 +25,28 @@ body{
   
 }
 
+.formulario{
+
+    float: right;
+    justify-content: center;
+    left: 20rem;
+    margin-top: 15px;
+    display: inline-flex
+   
+}
 
 
 form{   
-    top: -5px;
-    position: absolute;
     font-family: Helvetica;
-      padding-left: 20px;
+    padding-left: 20px;
     border: none;
     border-radius: 8px;
-    left: 870px;
     color: rgb(255, 254, 254);
     background-color: rgba(0, 0, 0, 0.575);
     font-size: 25px;
     width: 20rem;
-    height: 530px; 
+    height: 33rem;
+    display: inline-block;
     
 }
 
@@ -54,20 +55,28 @@ form{
     font-size: 15px;
 }
 
+.labells{
+    margin-top: -20px;
+}
+
 
 .formulario_enunciado{
-    
+    margin-top: 10px;
     font-size: 15px;
     
 }
 
+
+
 .check{
     float: left;
-
+    margin-top: -10px;
 }
 
 .formulario_check{
     font-size: 15px;
+    margin-top: 45px;
+
 }
 
 
@@ -78,7 +87,7 @@ form{
     height: 19px;
     width: 280px;
     font-size: 15px;
-    margin: 0px;
+   
 }
 
 .formdados:hover{
@@ -110,24 +119,10 @@ form{
     height: 23px;
 }
 
-.button{
-    position: absolute;
-    float: left;
-    margin: 20px;
-    left: 180px;
-    margin-top: 60px;
-    
-}
 
-.button1{
-    position: absolute;
-    float: left;
-    margin: 20px;
-    left: 10px;
-    margin-top: 60px;
-}    
 
 button{
     width: 120px;
     height: 28px;
-}
+    margin: 10px;
+} 

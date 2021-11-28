@@ -15,114 +15,102 @@
         Cadastro
     </h1>
 
-    <form class="formulario" action="/registro" method="post"> 
+    <div class="formulario">
+        
+            <form  action="/registro" method="post">
         
         
         
-            <h1 class="formulario_enunciado">Dados Pessoais</h1>
+        
+                <h1 class="formulario_enunciado">Dados Pessoais</h1>
+        
+            <div class="labels">
+                <label for="usuario">Usuario</label>
+            </div>
+                <div><input class="formdados" type="text" name="usuario" id="usuario"></div>
+        
+            <div class="labels">
+                <label for="senha">Senha</label>
+            </div>
+                <div><input class="formdados" type="password" name="senha" id="senha"></div>
+        
+            <div  class="labels">
+                <label for="e-mail">E-mail</label></div>
+                <input class="formdados" type="email" name="e-mail" id="e-mail">
+        
+        
+            <div class="labels">
+                <label for="telefone">Telefone</label></div>
+                <input class="formdados" type="tel" name="telefone" id="telefone">
             
-        <div class="labels">
-            <label for="usuario">Usuario</label>
-        </div>
-
-            <div><input class="formdados" type="text" name="usuario" id="usuario"></div>
-
-                
-        <div class="labels">
-            <label for="senha">Senha</label>
-        </div>
-            <div><input class="formdados" type="password" name="senha" id="senha"></div>
         
- 
-
-   
-        <div  class="labels">
-            <label for="e-mail">E-mail</label></div>
-            <input class="formdados" type="email" name="e-mail" id="e-mail">
+           <div class="labels">
         
-    
-        <div class="labels">
-            <label for="telefone">Telefone</label></div>
-            <input class="formdados" type="tel" name="telefone" id="telefone">
+                    <label for="data">Data de nascimento</label> </div>
+                    <input class="formdados" type="date" name="data" id="data">
         
-
-   <div class="labels">
-       
-                <label for="data">Data de nascimento</label> </div>
-                <input class="formdados" type="date" name="data" id="data">
-   
         
-
-    
         
-        <p class="labels">Possui mais de 18 anos?</p>
-        <div>   
-        <input 
-                type="radio"
-                id="sim" 
-                name="idade" 
-                value="sim" 
-            >
-            <label class="labels" for="sim">Sim</label>
-
+            <p class="labels">Possui mais de 18 anos?</p>
+            <div class="labells">
             <input 
-                type="radio" 
-                id="nao"
-                name="idade" 
-                value="nao" 
-            >
-            <label class="labels" for="nao">Não</label>
-     
-        </div>
-
-
-        <p class="formulario_enunciado">Escolha um ponto turistico que deseja está proximo</p>
-        <select class="seleção" >
-            <option class="formulario_opcoes" selected disabled>Lugares para estadia</option>
-                <option value="FarolDaBarra">Farol da Barra</option>
-                <option value="Pelourinho">Pelourinho</option>
-                <option value="Ribeira">Ribeira</option>
-    
-        </select>
-
-
-
-        <p class="formulario_check">Interesses na cidade.</p>
-                    <article class="check">
-                        <input 
-                            type="checkbox" 
-                            id="turista"
-                            name="turista" 
-                            value="turista" 
-                        >
-                        <label class="formulario_rotulo" for="turista">Turista.</label>
-                    </article>
-
-                    <article class="check">
-                        <input 
-                            type="checkbox" 
-                            id="Residente"
-                            name="Residente" 
-                            value="Residente" 
-                        >
-                        <label class="formulario_rotulo" for="turista">Residente.</label>
-                    </article>
-
-                    <article class="check">
-                        <input 
-                            type="checkbox" 
-                            id="Estudante"
-                            name="Estudante" 
-                            value="Estudante" 
-                        >
-                        <label class="formulario_rotulo" for="turista">Estudante.</label>
-                    </article>      
-
-                   <div class="button1"> <button type="submit">Cadastrar</button> </div> 
-                   <div class="button" > <button type="reset">Limpar</button> </div>
-
-    </form>
- 
+                    type="radio"
+                    id="sim"
+                    name="idade"
+                    value="sim"
+                >
+                <label class="labels" for="sim">Sim</label>
+            
+                    <input
+                        type="radio"
+                        id="nao"
+                        name="idade"
+                        value="nao"
+                    >
+                    <label class="labels" for="nao">Não</label>
+            </div>
+        
+            
+            <p class="formulario_enunciado">Escolha um ponto turistico que deseja está proximo</p>
+            <select class="seleção" >
+                <option class="formulario_opcoes" selected disabled>Lugares para estadia</option>
+                    <option value="FarolDaBarra">Farol da Barra</option>
+                    <option value="Pelourinho">Pelourinho</option>
+                    <option value="Ribeira">Ribeira</option>
+        
+            </select>
+            <p class="formulario_check">Interesses na cidade.</p>
+                        <article class="check">
+                            <input
+                                type="checkbox"
+                                id="turista"
+                                name="turista"
+                                value="turista"
+                            >
+                            <label class="formulario_rotulo" for="turista">Turista.</label>
+                        </article>
+                        <article class="check">
+                            <input
+                                type="checkbox"
+                                id="Residente"
+                                name="Residente"
+                                value="Residente"
+                            >
+                            <label class="formulario_rotulo" for="turista">Residente.</label>
+                        </article>
+                        <article class="check">
+                            <input
+                                type="checkbox"
+                                id="Estudante"
+                                name="Estudante"
+                                value="Estudante"
+                            >
+                            <label class="formulario_rotulo" for="turista">Estudante.</label>
+                        </article>
+                       <div class="button1"> <button type="submit">Cadastrar</button>
+                        <button type="reset">Limpar</button> </div>
+        </form>
+    </div>
 
 </body>
 </html>
