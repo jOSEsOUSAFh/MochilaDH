@@ -4,20 +4,18 @@ body{
     background-size: cover; 
     background-attachment: fixed;
     margin: 0%;
+    padding: 0%;
     position: relative;
+    max-width: 320px;
+    max-height: 400px;
 }
 
-.banner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
 
 .animated-word {
-    top: 340px;
-    left: 200px;
-    position: absolute;
+    top: 200px;
+    left: 280px;
+    position: relative;
     right: 600px;
 	font-family: Helvetica;
 	letter-spacing: 0.4em;
@@ -36,36 +34,40 @@ body{
 
 
 form{   
-    top: 13px;
-    position: relative;
+    top: -5px;
+    position: absolute;
     font-family: Helvetica;
-    padding: 10px;    
+      padding-left: 20px;
     border: none;
     border-radius: 8px;
-    left: 970px;
+    left: 870px;
     color: rgb(255, 254, 254);
     background-color: rgba(0, 0, 0, 0.575);
     font-size: 25px;
-    width: 500px;
-    height: 780px; 
+    width: 20rem;
+    height: 530px; 
     
 }
 
 .labels{
-    margin-top:  40px;
-    font-size: 20px;
+    margin-top:  25px;
+    font-size: 15px;
 }
 
 
 .formulario_enunciado{
-    margin-top:  10px;
-    font-size: 20px;
+    
+    font-size: 15px;
     
 }
 
+.check{
+    float: left;
+
+}
+
 .formulario_check{
-    margin-top:  10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -73,62 +75,59 @@ form{
     position: absolute;
     border: none;
     border-radius: 3px;
-    height: 23px;
-    width: 480px;
-    font-size: 20px;
-    margin: 10px;
+    height: 19px;
+    width: 280px;
+    font-size: 15px;
+    margin: 0px;
 }
 
 .formdados:hover{
-    height: 27px;
-    width: 482px;
+    height: 22px;
+    width: 282px;
 }
 
 .seleção:hover{
-    height: 27px;
-    width: 482px;
+    height: 24px;
+    width: 282px;
 }
 
-button{
-    margin-left: 20px;
-    position: relative;
-    left: 5px;
-    margin-top: 28px;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: rgb(245, 196, 35);
-    color: rgb(255, 250, 250);
-    font-size: 20px;
-    border: none;
-    
-    
-    
-}
 
-button:hover{
-    background-color: rgb(241, 241, 241);
-    color: black;
-    width: 202px;
-    height: 42px;
-    
-  }
 
 
 
 .formulario_rotulo{
-    font-size: 25px;
+    font-size: 15px;
     top: 0px;
 }
 
 .seleção{
+    position: absolute;
     height: 23px;
-    width: 480px;
-    font-size: 20px;
+    width: 280px;
+    font-size: px;
     border: none;
     border-radius: 3px;
     height: 23px;
 }
 
+.button{
+    position: absolute;
+    float: left;
+    margin: 20px;
+    left: 180px;
+    margin-top: 60px;
+    
+}
 
-/* inline */
+.button1{
+    position: absolute;
+    float: left;
+    margin: 20px;
+    left: 10px;
+    margin-top: 60px;
+}    
+
+button{
+    width: 120px;
+    height: 28px;
+}
