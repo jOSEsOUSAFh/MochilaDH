@@ -46,7 +46,7 @@
 
 let diaAtual = () => {
     if(dia <= qtdiaMes()){
-        return dia
+        return dia+`/`+mes+`/`+ano
     }
 }
 
@@ -54,7 +54,7 @@ let diaAtual = () => {
 
 
 
-// console.log(diaAtual()+`/`+mes+`/`+ano)
-console.log(qtdDias())
+console.log(diaAtual())
 
+console.log(qtdDias())
 
