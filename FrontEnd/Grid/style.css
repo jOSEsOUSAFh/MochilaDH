@@ -1,0 +1,35 @@
+header{
+    background-color: aqua;
+    grid-area: header;
+    height: 50px;
+}
+
+aside{
+    background-color: blue;
+    grid-area:  aside;
+    height: 420px;
+}
+
+main{
+    background-color: blueviolet;
+    grid-area: main;
+    height: 420px;
+}
+
+footer{
+    background-color: coral;
+    grid-area: footer;
+    height: 50px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer'
+    
+    ;
+}
+
