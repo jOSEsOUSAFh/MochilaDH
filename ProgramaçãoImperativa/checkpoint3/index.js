@@ -2,8 +2,8 @@ const Aluno = require('./alunos');
 const Curso = require('./curso');
 const curso = require('./curso');
 
-const Cruz = new Aluno('Cruz',2,[10,10,10,10]);
-// Cruz.faltas();
+const Cruz = new Aluno('Cruz',0,[10,10,10,10]);
+Cruz.faltas();
 curso.adcAlunos(Cruz)
 
 const listaDeAlunos = curso.listaDeAlunos
@@ -15,6 +15,6 @@ listaDeAlunos.forEach((alunos) => {
     console.log(`Quantidade de falta: ${alunos.faltas()}`)
     console.log(`Status: ${curso.AprovadoNaMateria(alunos)}`)
     console.log("---------------------------------------------------------------------------------------")
-
 });
 
+console.log(curso.listaAprovados())

@@ -28,6 +28,15 @@ const Curso = {
         } else{
             return "Reprovado"
         }
+    },
+
+    listaAprovados: function(){
+        const estudantes = this.listaDeAlunos
+        const listaAprovados = []
+        estudantes.forEach(function(alunos){if(Curso.AprovadoNaMateria(alunos) == 'Aprovado'){
+        listaAprovados.push(Curso.AprovadoNaMateria(alunos))}
+        })
+        return listaAprovados
     }
 }
 
