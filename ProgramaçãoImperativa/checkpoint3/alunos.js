@@ -1,3 +1,4 @@
+
 function Aluno(nome,qtdFaltas,notas){
     this.nome = nome;
     this.qtdFaltas = qtdFaltas;
@@ -23,16 +24,4 @@ Aluno.prototype.faltas = function(){
 
 
 
-listaDeAlunos = []
-const Jose = new Aluno('José',2,[8,9,9,9]);
-Jose.faltas();
-
-const Almir = new Aluno('Almir',1,[10,3,4,3])
-Almir.faltas();
-listaDeAlunos.push(Jose);
-
-
-
-
-module.exports = listaDeAlunos;
-
+module.exports = Aluno;
