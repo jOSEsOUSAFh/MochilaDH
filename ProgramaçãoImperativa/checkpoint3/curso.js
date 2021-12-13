@@ -31,12 +31,13 @@ const Curso = {
     },
 
     listaAprovados: function(){
-        const estudantes = this.listaDeAlunos
+        const listaDeAlunos = this.listaDeAlunos
         const listaAprovados = []
-        estudantes.forEach(function(alunos){if(Curso.AprovadoNaMateria(alunos) == 'Aprovado'){
-        listaAprovados.push(Curso.AprovadoNaMateria(alunos))}
+        listaDeAlunos.forEach(function(alunos){
+        listaAprovados.push(Curso.AprovadoNaMateria(alunos))
+    
         })
-        return listaAprovados
+        return listaAprovados 
     }
 }
 

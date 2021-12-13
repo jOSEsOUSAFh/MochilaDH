@@ -17,4 +17,5 @@ listaDeAlunos.forEach((alunos) => {
     console.log("---------------------------------------------------------------------------------------")
 });
 
-console.log(curso.listaAprovados())
+    console.log(curso.listaAprovados())
+

@@ -1,17 +1,16 @@
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 body{
     background-image: url("imagens/Elevador.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    float: left;
-    /* display: flex; */
-    /* align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: 
+    'titulo formulario'
+    'titulo fotmulario';
+    align-items: center;
+
+
 }
 
 
@@ -22,10 +21,9 @@ body{
 	font-weight: 60;
 	font-size: 50px;
 	color: #ffffff;
-    cursor: pointer;
+    margin-left: 50px;
+    grid-area: titulo;
     
-    
-
 }
 
 .animated-word:hover {
@@ -34,10 +32,8 @@ body{
 }
 
 .formulario{
-    float: right; 
-     justify-content: center;
      margin-top: 15px; 
-     margin-left: 100px;
+    grid-area: formulario;
 }
 
 
@@ -133,3 +129,43 @@ button{
     margin: 10px;
     margin-top: 30px;
 } 
+
+
+@media (max-width: 655px){   
+    body{
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-areas: 
+        'formulario'
+        'titulo';
+        margin-left: 80px;
+
+
+    }
+
+    .animated-word{
+    /* margin-left: 60px; */
+    }
+ 
+    
+
+}
+
+@media (max-width: 376px){   
+    body{
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-areas: 
+        'formulario'
+        'titulo';
+        margin-left: 20px;
+
+
+    }
+
+    .animated-word{
+    }
+ 
+    
+
+}
