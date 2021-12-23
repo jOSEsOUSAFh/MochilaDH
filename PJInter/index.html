@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Status</title>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Status</title>
 </head>
 <body>
     <!-- modal -->
@@ -17,7 +17,8 @@
     <button class="btnFecharModal">&times;</button>
         </div>
         <div class="body">
-  <!-- formulario  -->  
+
+
     <label for="Usuario">Usuario</label>
     <input class="dados" type="text" name="usuario" id="usuario" />
     <input type="submit" value="Adicionar" id="addProcesso"/>
@@ -29,9 +30,23 @@
 
     <!-- Quadro -->
     <div class="Quadro">
-<div class="Status" id="noStatus">
+<div class="Status" id="Status1">
 <h1>Pátio</h1>
 <button id="AdcButton" data-target-modal="#formCarros">Adicionar</button>
+<div class="Carro" draggable ="true">
+    a
+    <span class="fechar">x</span>
+</div>
+
+<div class="Carro" draggable ="true">
+    b
+    <span class="fechar">x</span>
+</div>
+
+<div class="Carro" draggable ="true">
+    c
+    <span class="fechar">x</span>
+</div>
 
 </div>
 <div class="Status">
@@ -46,7 +61,8 @@
     </div>
 
 
-    <script src="script.js"></script>
     <script>$(".Carro").sortable();</script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

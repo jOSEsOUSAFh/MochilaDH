@@ -33,8 +33,8 @@ todoStatus.forEach((Status)=>{
 
 
 
-function dragOver(e){
-    e.preventDefault();
+function dragOver(sobre){
+    sobre.preventDefault();
     // console.log("dragOver")
 };
 
@@ -54,23 +54,16 @@ function dragDrop(){
     // console.log("dragDrop")
 }
 
-function getDragElement(Status, y){
- const draggableElements =  [...Status.querySelectorAll('Carro:not(.Carro)')]
-
- draggableElements.reduce()
-}
 
 
 // Modal
 
 const btns = document.querySelectorAll("[data-target-modal]");
 const fecharModal = document.querySelectorAll(".btnFecharModal");
-const overlay = document.querySelectorAll("overlay")
 
 btns.forEach((btn)=>{
     btn.addEventListener("click", ()=>{
         document.querySelector(btn.dataset.targetModal).classList.add("active");
-        // overlay.classList.add("active")
     });
 });
 
@@ -78,17 +71,9 @@ fecharModal.forEach((btn)=>{
     btn.addEventListener("click", ()=>{
         const modal = btn.closest(".modal");
         modal.classList.remove("active");
-        // overlay.classList.remove("active");
     });
 });
 
-window.onclick = (event) =>{
-    if (event.target == overlay){
-        const modals = document.querySelectorAll(".modal");
-        modals.forEach((modaL)=> modaL.classList.remove("active"));
-        // overlay.classList.remove("active");
-    }
-};
 
 // criar processo 
 
@@ -115,9 +100,9 @@ function criarProcesso(){
 
     addProcesso.appendChild(span)
 
-    noStatus.appendChild(addProcesso)
+    Status1.appendChild(addProcesso)
 
-    // formCarros.classList.remove("active")
+    formCarros.classList.remove("active")
 
     span.addEventListener("click", ()=>{
     span.parentElement.style.display = "none"
@@ -133,10 +118,4 @@ function criarProcesso(){
 
 const fecharBtns = document.querySelectorAll(".fechar");
 
-
-
-// fecharBtns.forEach((btn)=>{
-//     btn.addEventListener("click", ()=>{
-//         btn.parentElement.style.display = "none"
-//     });
-// });
+// $(".Carro").sortable();
