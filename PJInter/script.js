@@ -1,60 +1,3 @@
-// const carros = document.querySelectorAll(".Carro");
-// const todoStatus = document.querySelectorAll(".Status");
-// let draggableCarro = null;
-
-// carros.forEach((Carro)=>{
-//     Carro.addEventListener("dragstart", dragStart)
-//     Carro.addEventListener("dragend", dragEnd) 
-// });
-
-// function dragStart(){
-//     draggableCarro = this
-//     // draggableCarro.classList.add('dragging')
-//     setTimeout(()=>{
-//         this.style.display = "none"
-//     }, 0);
-    
-// };
-
-// function dragEnd(){
-//     draggableCarro = null;
-//     setTimeout(()=>{
-//         this.style.display = "block"
-//     }, 0);
-//     // console.log('dragEnd')
-// };
-
-// todoStatus.forEach((Status)=>{
-//     Status.addEventListener("dragover", dragOver);
-//     Status.addEventListener("dragenter", dragEnter);
-//     Status.addEventListener("dragleave", dragLeave);
-//     Status.addEventListener("drop", dragDrop);
-// });
-
-
-
-// function dragOver(sobre){
-//     sobre.preventDefault();
-//     // console.log("dragOver")
-// };
-
-// function dragEnter(){
-//     this.style.border = "none"
-//     // console.log("dragEnter")
-// };
-
-// function dragLeave(){
-//     this.style.border = "none"
-//     // console.log("dragLeave")
-// };
-
-// function dragDrop(){
-//     this.style.border = "none"
-//     this.appendChild(draggableCarro)
-//     // console.log("dragDrop")
-// }
-
-
 
 // Modal
 
@@ -69,22 +12,15 @@ btns.forEach((btn)=>{
 
 fecharModal.forEach((btn)=>{
     btn.addEventListener("click", ()=>{
-        const modal = btn.closest(".modal");
-        modal.classList.remove("active");
         limparCampo()
+        CloseModal()
     });
 });
 
 
-const elementTemp = {
-    Placa : 'AAA0002',
-    Material: "KCL2",
-    Quantidade: 50,
-    OrdemProd: 2
-}
-
-const getLocalStorage = () => JSON.parse(localStorage.getItem("ID")) ?? []
 const setLocalStorage = (dbElement) => localStorage.setItem("ID", JSON.stringify(dbElement))
+const getLocalStorage = () => JSON.parse(localStorage.getItem("ID")) ?? []
+
 // CRUD 
 
 const readElement = () => getLocalStorage()
@@ -107,6 +43,7 @@ const deleteElement = (index) =>{
     const dbElement = readElement()
     dbElement.splice(index,1)
     setLocalStorage(dbElement)
+    location.reload()
 }
 
 const valido = () =>{
@@ -130,12 +67,13 @@ const salvarElemento = () =>{
             CloseModal()
             limparCampo()
             updadeTabela()
+            location.reload()
         }else{
             updadeElement(index,elemento)
             CloseModal()
             limparCampo()
             updadeTabela()
-            
+            location.reload()
         }
 
 
@@ -188,10 +126,11 @@ const createCarro = (Carro, index) =>{
      </div>
      `
      document.querySelector('#Status1').appendChild(newCarro)
+ 
      
 }
 
-updadeTabela()
+
 
 
 const editarCampos = (Carro) =>{
@@ -221,11 +160,11 @@ const editDelet = (event) =>{
         }
     }
 }
-
+const status = document.getElementsByClassName('.Carro').parentNode
 document.querySelector('#Status1').addEventListener('click', editDelet)
-// document.querySelector('#Status2').addEventListener('click', editDelet)
-// document.querySelector('#Status3').addEventListener('click', editDelet)
-// document.querySelector('#Status4').addEventListener('click', editDelet)
+document.querySelector('#Status2').addEventListener('click', editDelet)
+document.querySelector('#Status3').addEventListener('click', editDelet)
+document.querySelector('#Status4').addEventListener('click', editDelet)
 
 
 
@@ -234,14 +173,15 @@ document.querySelector('#Status1').addEventListener('click', editDelet)
 
 const fecharBtns = document.querySelectorAll(".fechar");
 
+
+// sortable
+
 $(function() {
     $( "#Status1, #Status2, #Status3, #Status4" ).sortable({
-       connectWith: "#Status1, #Status2, #Status3, #Status4"
+       connectWith: "#Status1, #Status2, #Status3, #Status4",
+       opacity: 0.5
     });
-    $( "#Status1, #Status2, #Status3,#Status4").sortable({
-       connectWith: "#Status1,#Status2, #Status3,#Status4",
-       dropOnEmpty: false
-    });
+    
  });
 
- 
+ updadeTabela()
