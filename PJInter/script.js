@@ -18,19 +18,25 @@ fecharModal.forEach((btn)=>{
 });
 
 
-const setLocalStorage = (dbElement) => localStorage.setItem("ID", JSON.stringify(dbElement))
-const getLocalStorage = () => JSON.parse(localStorage.getItem("ID")) ?? []
+const setLocalStorage = (dbElement) => localStorage.setItem("STATUS1", JSON.stringify(dbElement))
+const getLocalStorage = () => JSON.parse(localStorage.getItem("STATUS1")) ?? []
+
+const setLocalStorage2 = (dbElement2) => localStorage.setItem("STATUS2", JSON.stringify(dbElement2))
+const getLocalStorage2 = () => JSON.parse(localStorage.getItem("STATUS2")) ?? []
+
+
+
+
 
 // CRUD 
-
 const readElement = () => getLocalStorage()
+const readElement2 = () => getLocalStorage2()
 
 const createElement = (elemento)=>{
    const dbElement =  getLocalStorage()
    dbElement.push (elemento)
    setLocalStorage(dbElement)
 };
-
 
 
 const updadeElement = (index, elemento)=> {
@@ -101,13 +107,37 @@ const limparCampo = ()=>{
 
 const limparTabela = () =>{
     const tabelas = document.querySelectorAll('#Status1 .Carro')
+    const tabelas2 = document.querySelectorAll('#Status2 .Carro')
     tabelas.forEach(tabela=> tabela.parentNode.removeChild(tabela))
+    tabelas2.forEach(tabela2=> tabela2.parentNode.removeChild(tabela2))
 }
 
 const updadeTabela = () =>{
     const dbElement = readElement()
+    const dbElement2 = readElement2()
     limparTabela()
     dbElement.forEach(createCarro)
+    dbElement2.forEach(createCarro2)
+ 
+}
+
+const createCarro2 = (Carro, index) =>{
+    const newCarro = document.createElement('div')
+    newCarro.innerHTML = `
+    <div class="Carro">
+    <h1 class="h1Drag">${Carro .Placa}</h1>
+    <ul>
+     <li>${Carro.Material}</li>
+     <li>${Carro.Quantidade}</li>
+     <li>${Carro.OrdemProd}</li>
+    </ul>
+    <button class="button green" id="edit-${index}">Editar</button>
+    <button  class="button green" id="delete-${index}">\u00D7</button>
+     </div>
+     `
+     document.querySelector('#Status2').appendChild(newCarro)
+ 
+     
 }
 
 
@@ -168,20 +198,42 @@ document.querySelector('#Status4').addEventListener('click', editDelet)
 
 
 
-
-
-
 const fecharBtns = document.querySelectorAll(".fechar");
 
 
 // sortable
 
+$( "#Status2 " ).sortable({
+    receive: function( index, elemento ) {
+     const  dbElement = getLocalStorage()
+    dbElement[index] = elemento
+    setLocalStorage2(dbElement)
+    }
+  });
+ updadeTabela()
+
+
+
+
 $(function() {
     $( "#Status1, #Status2, #Status3, #Status4" ).sortable({
        connectWith: "#Status1, #Status2, #Status3, #Status4",
-       opacity: 0.5
+       opacity: 0.5,
+       revert: true,
+       remove: function(index) {
+        const carro = readElement()[index]
+        const dbElement = readElement()
+        dbElement.splice(carro,1)
+        setLocalStorage(dbElement)
+
+           console.log("removed")
+       }
     });
     
  });
 
- updadeTabela()
+
+//  const  dbElement = readElement()
+//  dbElement[index] = elemento
+//  setLocalStorage(dbElement)
+
