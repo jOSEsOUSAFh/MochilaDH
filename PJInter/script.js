@@ -205,12 +205,13 @@ const fecharBtns = document.querySelectorAll(".fechar");
 
 $( "#Status2 " ).sortable({
     receive: function( index, elemento ) {
-     const  dbElement = getLocalStorage()
+     const  dbElement = getLocalStorage() // essa const precisa receber o item que veio de outra coluna
     dbElement[index] = elemento
     setLocalStorage2(dbElement)
+    updadeTabela()
     }
   });
- updadeTabela()
+ 
 
 
 
@@ -220,19 +221,19 @@ $(function() {
        connectWith: "#Status1, #Status2, #Status3, #Status4",
        opacity: 0.5,
        revert: true,
-       remove: function(index) {
-        const carro = readElement()[index]
+       remove: function() {
+        const index = 1 // essa const precisa retornar o item que foi arrastado para outra coluna
         const dbElement = readElement()
-        dbElement.splice(carro,1)
+        dbElement.splice(index,1)
         setLocalStorage(dbElement)
-
+        updadeTabela()
            console.log("removed")
        }
     });
     
  });
 
-
+ updadeTabela()
 //  const  dbElement = readElement()
 //  dbElement[index] = elemento
 //  setLocalStorage(dbElement)
