@@ -203,14 +203,14 @@ const fecharBtns = document.querySelectorAll(".fechar");
 
 // sortable
 
-$( "#Status2 " ).sortable({
-    receive: function( index, elemento ) {
-     const  dbElement = getLocalStorage() // essa const precisa receber o item que veio de outra coluna
-    dbElement[index] = elemento
-    setLocalStorage2(dbElement)
-    updadeTabela()
-    }
-  });
+// $( "#Status2 " ).sortable({
+//     receive: function( index, elemento ) {
+//      const  dbElement = getLocalStorage() // essa const precisa receber o item que veio de outra coluna
+//     dbElement[index] = elemento
+//     setLocalStorage2(dbElement)
+//     updadeTabela()
+//     }
+//   });
  
 
 
@@ -220,21 +220,24 @@ $(function() {
     $( "#Status1, #Status2, #Status3, #Status4" ).sortable({
        connectWith: "#Status1, #Status2, #Status3, #Status4",
        opacity: 0.5,
-       revert: true,
-       remove: function() {
-        const index = 1 // essa const precisa retornar o item que foi arrastado para outra coluna
-        const dbElement = readElement()
-        dbElement.splice(index,1)
-        setLocalStorage(dbElement)
-        updadeTabela()
-           console.log("removed")
-       }
+       revert: true
     });
-    
  });
 
+//  $(function() {
+//     $( "#Status1, #Status2, #Status3, #Status4" ).sortable({
+//        connectWith: "#Status1, #Status2, #Status3, #Status4",
+//        remove: function() {
+//         const index = 1 // essa const precisa retornar o item que foi arrastado para outra coluna
+//         const dbElement = readElement()
+//         dbElement.splice(index,1)
+//         setLocalStorage(dbElement)
+//         updadeTabela()
+//            console.log("removed")
+//        }
+//     });
+    
+//  });
+
  updadeTabela()
-//  const  dbElement = readElement()
-//  dbElement[index] = elemento
-//  setLocalStorage(dbElement)
 
