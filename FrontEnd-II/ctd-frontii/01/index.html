@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - Boas vindas</title>
+</head>
+<body>
+    
+    <!-- 
+        1. Código-fonte importado 
+        É possível importar o Javascript através de um arquivo externo.
+        Alguns atributos foram criados para na versão 5 do HTML para 
+        suprir a necessidade de controle de tempo de carregamento da página.
+
+        async - Para carregar o arquivo simuntâniamente com o arquivo HTML.
+        defer - Para carregar o arquivo após o total carregamento do HTML.
+
+        Obs.: Esses atributos não são compatíveis com todas as versões de navegadores,
+        portanto ainda é necessário colocá-lo antes do fechamento da tag <body>.
+    -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- 
+        2. Código-fonte incorporado
+        Incorpora o código fonte no documento.
+        
+        Obs.: Os atributos async e defer não surtem efeito nessa modalidade.
+    -->
+    <script type="text/javascript">
+
+        // Seu código vai aqui...
+
+        console.log("Código-fonte incorporado.");
+
+    </script>
+
+    <!--
+
+        Na opinião dos alunos:
+        - Marcos Fonseca: É visivelmente melhor utilizar o código importado.
+        - José Souza / Alexandre de Oliveira: Reaproveitamento de código.
+        - Willian Sant Anna: Depende do projeto, pois cada src="" / href="" representa uma requisição e pode diminuir a performance do app.
+
+    -->
+
+</body>
+</html>
