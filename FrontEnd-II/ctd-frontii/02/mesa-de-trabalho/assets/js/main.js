@@ -42,7 +42,7 @@ if (identificarUsuario == "") {
     } // Se receber valores nos dois prompts, perguntarar se o numero é wts
 
     if ((numeroDoUsuario  != "" && identificarUsuario != "")) {
-        var msg = alert(`Muito obrigado ${identificarUsuario}, um de nossos consultores entrará em contato contigo através do número ${numeroDoUsuario}`)
+        var msg = alert(`Muito obrigado ${identificarUsuario}, um de nossos consultores entrará em contato através do número ${numeroDoUsuario}`)
         console.log(`Nome:${identificarUsuario} Telefone:${numeroDoUsuario} WhatsApp:${tellWpp}`)
     } // Se os prompts receberem valores após o confirm aparecerar um alert !
 
