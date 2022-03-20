@@ -1,0 +1,21 @@
+
+body {
+    font-family: Arial Black, Arial, sans-serif;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.botao {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: violet;
+    font-size: 24px;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}

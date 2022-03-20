@@ -1,0 +1,1 @@
+let section = document.getElementById('carrinho')

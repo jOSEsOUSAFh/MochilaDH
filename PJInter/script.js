@@ -114,31 +114,12 @@ const limparTabela = () =>{
 
 const updadeTabela = () =>{
     const dbElement = readElement()
-    const dbElement2 = readElement2()
     limparTabela()
     dbElement.forEach(createCarro)
-    dbElement2.forEach(createCarro2)
  
 }
 
-const createCarro2 = (Carro, index) =>{
-    const newCarro = document.createElement('div')
-    newCarro.innerHTML = `
-    <div class="Carro">
-    <h1 class="h1Drag">${Carro .Placa}</h1>
-    <ul>
-     <li>${Carro.Material}</li>
-     <li>${Carro.Quantidade}</li>
-     <li>${Carro.OrdemProd}</li>
-    </ul>
-    <button class="button green" id="edit-${index}">Editar</button>
-    <button  class="button green" id="delete-${index}">\u00D7</button>
-     </div>
-     `
-     document.querySelector('#Status2').appendChild(newCarro)
- 
-     
-}
+
 
 
 const createCarro = (Carro, index) =>{
