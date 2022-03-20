@@ -16,15 +16,15 @@ const dbCsideBar = () => {
 
 document.body.addEventListener('mousemove', function(e){// seleciona todo o body, e quando o evento mover do mouse for percebido, executa a função anonima
    // a função:
-    var balao = document.createElement("nav") // cria uma section
+    var balao = document.createElement("a") // cria uma "a"
     balaoTexto = document.createTextNode("Bem vindo") // cria um texto
-    balao.appendChild(balaoTexto) // adiciona o texto na section
-    balao.classList.add('balao') // adiciona uma class na section
+    balao.appendChild(balaoTexto) // adiciona o texto na "a"
+    balao.classList.add('balao') // adiciona uma class na "a"
     balao.id = 'texto' // adiciona um id
-    document.body.appendChild(balao) // adiciona a section ao html
+    document.body.appendChild(balao) // adiciona a "a" ao html
     document.getElementById('texto').style.left = e.offsetX + 'px';
     document.getElementById('texto').style.top = e.offsetY + 'px';
-    // faz a section seguir o mouse
+    // faz a "a" seguir o mouse
 }) 
 
 
