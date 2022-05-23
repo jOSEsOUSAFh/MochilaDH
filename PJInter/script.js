@@ -107,9 +107,7 @@ const limparCampo = ()=>{
 
 const limparTabela = () =>{
     const tabelas = document.querySelectorAll('#Status1 .Carro')
-    const tabelas2 = document.querySelectorAll('#Status2 .Carro')
     tabelas.forEach(tabela=> tabela.parentNode.removeChild(tabela))
-    tabelas2.forEach(tabela2=> tabela2.parentNode.removeChild(tabela2))
 }
 
 const updadeTabela = () =>{

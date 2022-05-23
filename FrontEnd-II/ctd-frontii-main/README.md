@@ -40,39 +40,73 @@ Apresentar os recursos do Chrome Devtools a partir de uma implementação de fun
 
 O módulo é dedicado à manipulação de elementos HTML em um site.
 
-### Aula 3: Introdução ao DOM
+### [Aula 3: Introdução ao DOM](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/03)
 <small>23 de fevereiro 2022 - terça-feira</small>
 
 Compreender o DOM (Document Object Mode) para começar a manipular seus elementos.
 
-- [ ] Objeto Window
-- [ ] Objeto Document
-- [ ] Selecionando elementos
+**Assíncrona**
 
-### Aula 4: Modificar elementos com Javascript
+- [x] Objeto Window
+- [x] Objeto Document
+- [x] Selecionando elementos
+
+**Síncrona**
+
+- [x] Objeto Window
+- [x] Objeto Document
+- [x] Selecionando elementos
+- [x] Variáveis - *Apenas* `var`
+
+### [Aula 4: Modificar elementos com Javascript](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/04)
 <small>07 de março 2022 - segunda-feira</small>
 
 O conhecimento sobre manipulação do DOM é expandido, mas desta vez trabalhando com estilos dos elementos do documento.
 
-- [ ] Manipulando o DOM
-- [ ] Template literal
-- [ ] Propriedade style
-- [ ] Propriedade `classList`
+**Assíncrona**
 
-### Aula 5: Trabalhando com nós
+- [x] Manipulando o DOM
+- [x] Template literal
+- [x] Propriedade style
+- [x] Propriedade `classList`
+    - [x] add()
+    - [x] remove()
+    - [x] toggle()
+    - [x] contains()
+
+**Síncrona**
+
+- [x] Propriedade style
+- [x] Propriedade `classList`
+    - [x] add()
+    - [x] remove()
+    - [x] toggle()
+- [x] Condicionais `if`, `else if`, `else`
+
+### [Aula 5: Trabalhando com nós](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/05)
 <small>08 de março 2022 - terça-feira</small>
 
 Compreender o que são nós, quais recursos e como utilizá-los para manipular os nós.  
 
-- [ ] Nós
-    - [ ] Criar 
-    - [ ] Adicionar
-    - [ ] Remover
-- [ ] Manipulando atributos
-    - [ ] `getAttribute()`
-    - [ ] `setAttribute()`
-    - [ ] `hasAttribute()`
-    - [ ] `removeAttribute()`
+**Assíncrona**
+
+- [x] Nós
+    - [x] Criar 
+    - [x] Adicionar
+    - [x] Remover
+- [x] Manipulando atributos
+    - [x] `getAttribute()`
+    - [x] `setAttribute()`
+    - [x] `hasAttribute()`
+    - [x] `removeAttribute()`
+
+**Síncrona**
+
+- [x] Manipulando atributos
+    - [x] `getAttribute()`
+    - [x] `setAttribute()`
+    - [x] `hasAttribute()`
+    - [x] `removeAttribute()`
 
 <br>
 
@@ -80,26 +114,90 @@ Compreender o que são nós, quais recursos e como utilizá-los para manipular o
  
 Com base na interação do usuário, acione diversos recursos para gerar dinamismo a uma aplicação web.
 
-### Aula 6: Revisão + Introdução a eventos
+### [Aula 6: Revisão + Introdução a eventos](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/06)
 <small>09 de março 2022 - quarta-feira</small>
 
 Compreender a parte dinâmica do Javascript, introdução a programação reativa.
 
+**Revisamos:**
 
-### Aula 7: Eventos
+- [x] Objeto Window
+- [x] Objeto Document
+- [x] Selecionando elementos
+    - [x] `getElementById()`
+    - [x] `querySelector()`
+    - [x] `querySelectorAll()`
+    - [x] `getElementByClassName()`
+- [x] Nós
+    - [x] Criar 
+    - [x] Adicionar
+    - [x] Remover
+- [x] Manipulando atributos
+    - [x] `getAttribute()`
+    - [x] `setAttribute()`
+    - [x] `hasAttribute()`
+    - [x] `removeAttribute()`
+
+**Aprendemos:**
+
+- [x] `addEventListener()`
+    - [x] `Evento click`
+- [x] `target.onclick = function() {}`
+- [x] `Funções`
+    - [x] `() => {}`
+    - [x] `function() {}`
+
+
+### [Aula 7: Eventos](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/07)
 <small>14 de março 2022 - segunda-feira</small>
 
 Estudar como podemos acionar diferentes procedimentos com base nas interações que o usuário tem com os elementos da aplicação web.
 
-- [ ] Quais são os eventos?
-    - [ ] Eventos do mouse
-    - [ ] Eventos do teclado
-    - [ ] Eventos de tempo
+**Assíncrona**
 
-### Aula 8: Disparando eventos
+- [x] Quais são os eventos?
+    - [x] Eventos do mouse
+    - [x] Eventos do teclado
+    - [ ] Eventos de tempo - *Esse evento não foi apresentado no Playground*
+
+**Síncrona**
+
+- [x] Eventos do mouse
+    - [x] `click`
+    - [x] `dblclick`
+    - [x] `mouseover`
+    - [x] `mouseout`
+    - [ ] `mousemove` *Não foi apresentado em aula, apenas citado*
+- [x] Eventos do teclado
+    - [x] `keydown`
+    - [x] `keyup`
+    - [x] `keydown`
+    - [x] `keypress`
+
+### [Aula 8: Disparando eventos](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/08)
 <smal>15 de março 2022 - terça-feira</small>
 
 Eventos que disparam funções.
+
+**Revisado**
+
+- [x] `addEventListener()`
+    - [x] `Evento click`
+- [x] `target.onclick = function() {}`
+- [x] `Funções`
+    - [x] `() => {}`
+    - [x] `function() {}`
+- [x] Eventos do mouse
+    - [x] `click``
+    - [x] `dblclick`
+    - [x] `mouseover``
+    - [x] `mouseout``
+    - [ ] `mousemove` *Não foi apresentado em aula, apenas citado*
+- [x] Eventos do teclado
+    - [x] `keydown`
+    - [x] `keyup`
+    - [x] `keydown`
+    - [x] `keypress`
 
 <br>
 
@@ -107,70 +205,106 @@ Eventos que disparam funções.
 
 Tendo trabalhado com os elementos de formulário, chega hora de validar os dados com os recursos ensinados anteriormente.
 
-### Aula 9: Primeira entrega
+### [Aula 9: Primeira entrega](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/09)
 <smal>16 de março 2022 - quarta-feira</small>
 
 Revisão dos tópicos vistos e apresentação dos recursos do produto entregável (avaliação).
 
-- [ ] Método de entrega
-- [ ] Forma de avaliação
-- [ ] Requisitos de entrega
+- [x] Método de entrega
+- [x] Forma de avaliação
+- [x] Requisitos de entrega
 
-### Aula 10: Formulários I
+### [Aula 10: Formulários I](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/10)
 <small>21 de março 2022 - segunda-feira</small>
 
 Como capturar os elementos de um formulário e manipular seus valores.
 
-- [ ] Anteriormente em Programação Imperativa
-    - [ ] Objetos literais
-    - [ ] Métodos de strings
-- [ ] Obtendo dados de um formulário
-    - [ ] Label
-    - [ ] Input (value)
+**Assíncrona**
+
+- [x] Anteriormente em Programação Imperativa
+    - [x] Objetos literais
+    - [x] Métodos de strings
+- [-] Obtendo dados de um formulário
+    - [x] Label
+    - [x] Input (value)
     - [ ] Textarea
     - [ ] Select
     - [ ] Radio button
     - [ ] Check box
-- [ ] Outros métodos de strings
-    - [ ] `trim()`
-    - [ ] `toUpperCase()`
-    - [ ] `toLowerCase()`
+- [-] Outros métodos de strings
+    - [x] `trim()`
+    - [x] `toUpperCase()`
+    - [x] `toLowerCase()`
+    - [x] `concat()`
+    - [x] `replace()`
+
+**Síncrona**
+
+- [-] Obtendo dados de um formulário
+    - [x] Label
+    - [x] Input (value)
+    - [ ] Textarea
+    - [ ] Select
+    - [ ] Radio button
+    - [ ] Check box
+- [-] Outros métodos de strings
+    - [x] `trim()`
+    - [x] `toUpperCase()`
+    - [x] `toLowerCase()`
     - [ ] `concat()`
     - [ ] `replace()`
+- [x] Expressões regulares
 
-### Aula 11: Formulários II - Como validar?
+
+### [Aula 11: Formulários II - Como validar?](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/11)
 <small>22 de março 2022 - terça-feira</small>
 
 Compreenda quais eventos podem ser utilizados na interação do usuário e enviar respostas visuais para validar os dados inseridos.
 
-- [ ] Eventos de formulário
-    - [ ] `focus()`
-    - [ ] `blur()`
-    - [ ] `change()`
-    - [ ] `submit()`
-    - [ ] `preventDefault()`
-- [ ] Validação do cliente
+**Assíncrona**
+
 - [ ] Validação assíncrona
     - [ ] `setTimeOut()` para imitar “promises”
-- [ ] Objeto Location
-    - [ ] `href`
-    - [ ] `reload()`
-    - [ ] `search()`
-    - [ ] `URLSearchParams`
-    - [ ] `query.has()`
-    - [ ] `query.get()`
+- [x] Objeto Location
+    - [x] `href`
+    - [x] `reload()`
+    - [x] `search()`
+    - [x] `URLSearchParams`
+    - [x] `query.has()`
+    - [x] `query.get()`
 
-### Aula 12: JSON e storage
+**Síncrona**
+
+- [x] Eventos de formulário
+    - [x] `focus()`
+    - [x] `blur()`
+    - [x] `change()`
+    - [x] `submit()`
+    - [x] `preventDefault()`
+- [x] Validação do cliente
+- [x] Expressões regulares
+
+
+### [Aula 12: JSON e storage](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/12)
 <small>23 de março 2022 - quarta-feira</small>
 
 Compreender a importância do JSON na comunicação web e como podemos armazenar informações no navegador.
 
-- [ ] Anteriormente em Programação Imperativa
-    - [ ] JSON
-- [ ] Session Storage e Local Storage
-- [ ] Praticando em um formulário de login
+**Assíncrona**
 
-### Aula 13: Revisão + Aplicativo To-Do
+- [x] Anteriormente em Programação Imperativa
+    - [x] JSON
+- [x] Session Storage e Local Storage
+
+
+**Síncrona**
+
+- [x] Anteriormente em Programação Imperativa
+    - [x] JSON
+- [x] Session Storage e Local Storage
+- [x] Praticando em um formulário de login
+
+### [Aula 13: Revisão + Aplicativo To-Do](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/13)
 <small>28 de março 2022 - segunda-feira</small>
 
 Apresentação do projeto integrador.
@@ -181,41 +315,71 @@ Apresentação do projeto integrador.
 
 Entendendo as particularidades das requisições assíncronas e aproveitando as vantagens de consumir APIs (Application Programming Interface).
 
-### Aula 14: Introdução às requisições assíncronas
+### [Aula 14: Introdução às requisições assíncronas](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/14)
 <small>29 de março 2022 - terça-feira</small>
 
 Revisão sobre o que são requisições assíncronas e compreensão de como funciona a comunicação web.
 
-- [ ] Anteriormente em Programação Imperativa
-    - [ ] Promessas
-    - [ ] `async/await`
-    - [ ] Arquitetura cliente-servidor
-- [ ] `Request` e `Response`
-- [ ] Métodos HTTP
-- [ ] Status (200, 300, 400, 500)
+**Assíncrono**
 
-### Aula 15: API(s) I
+- [-] Anteriormente em Programação Imperativa
+    - [x] Promessas
+    - [ ] `async/await`
+    - [x] Arquitetura cliente-servidor
+- [s] Status (200, 300, 400, 500)
+
+**Síncrono**
+
+- [x] `Request` e `Response`
+    - [x] Método HTTP `GET`
+    - [x] `fetch()`
+    - [x] `then()`
+
+
+### [Aula 15: API(s) I](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/15)
 <small>30 de março 2022 - quarta-feira</small>
 
 Compreender o que é uma API e conhecer os principais recursos que o Javascript oferece de forma nativa para o desenvolvimento de aplicações.
 
-- [ ] O que é API?
-    - [ ] REST
-    - [ ] Documentação
-- [ ] Fetch (GET)
-- [ ] `try`, `catch`, `finally`
-- [ ] APIs públicas
+**Assíncrono**
 
-### Aula 16: API(s) II
+- [x] O que é API?
+    - [x] REST
+    - [x] Documentação
+- [x] Fetch (GET)
+- [x] `try`, `catch`, `finally`
+- [x] APIs públicas
+
+**Síncrona**
+
+- [x] O que é API?
+    - [x] REST
+    - [x] Documentação
+- [x] Fetch (GET)
+- [x] APIs públicas
+
+
+### [Aula 16: API(s) II](https://gitlab.com/wssantanna/ctd-frontii/-/tree/main/16)
 <small>04 de abril 2022 - segunda-feira</small>
 
 Explorar os recursos da linguagem Javascript responsáveis por enviar e receber dados de uma API.
 
-- [ ] Fetch
-    - [ ] Método `POST`
-    - [ ] Método `PUT`
-    - [ ] Método `DELETE`
+**Assíncrono**
+
+- [x] Fetch
+    - [x] Método `POST`
+    - [x] Método `PUT`
+    - [x] Método `DELETE`
 - [ ] Postman
+
+**Síncrono**
+
+- [x] Fetch
+    - [x] Método `GET`
+    - [x] Método `POST`
+    - [x] Método `PUT`
+    - [x] Método `PATCH`
+    - [x] Método `DELETE`
 
 ### Aula 17: App To-Do - Documentação
 <small>05 de abril 2022 - terça-feira</small>
