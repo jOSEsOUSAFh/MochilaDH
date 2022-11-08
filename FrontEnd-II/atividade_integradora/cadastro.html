@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App - Cadastrar</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/styleCadastro.css">
+</head>
+<body>
+    <div class="l-app"></div>
+   
+  <body>
+    <div class="form-container">
+        <form action="">
+      <h1>Crie seu cadastro</h1>
+      <div class="input-container">
+        <label for="firstName" class="name">Primeiro nome</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Insira seu primeiro nome"
+          class="firstName"
+          name="name">
+      </div>
+
+      <div class="input-container">
+        <label for="lastName" class="lastname">Sobrenome</label>
+        <input
+          id="lastName"
+          type="text"
+          placeholder="Insira seu sobrenome"
+          class="lastname"
+          name="lastName">
+      </div>
+
+      <div class="input-container">
+        <label for="email" class="email">E-mail</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Insira seu e-mail"
+          class="email"
+          email="email">
+      </div>
+
+      <div class="input-container">
+        <label for="password" class="password">Senha</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Crie uma senha com 8 dígitos"
+          class="password"
+          password="password"/>
+      </div>
+
+      <div class="input-container">
+        <label for="password" class="password_two">Repita a senha</label>
+        <input
+          type="password"
+          placeholder="Repita a senha com 8 dígitos"
+          class="password_two"
+          password="password">
+      </div>
+
+
+      <div class="options-container">
+        <div class="options-checkbox">
+          <input type="checkbox" name="remember" id="remember"/>
+          <label for="remember">Salvar informações</label>
+        </div>
+      </div>
+
+
+        <input id="btnCadastrar" type="button" value="Criar conta">
+      </form>
+    </div>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

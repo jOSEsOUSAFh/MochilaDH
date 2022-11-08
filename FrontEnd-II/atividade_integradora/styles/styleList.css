@@ -1,0 +1,51 @@
+/* paleta de cores:
+azul #040928;
+amarelo #cf7712;
+branco #fffff; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040928;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.list-container {
+  background-color: #fff;
+  margin: 50px auto;
+  width: 700px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input { 
+  font-size: 18px;
+}
+
+.input-container, .adicionar {
+  display: inline-block;
+}
+
+.tarefa {
+  padding: 5px;
+  width: 500px;
+}
+
+.adicionar {
+  padding: 10px;
+  background-color: #cf7712;
+  color: #040928;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}

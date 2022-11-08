@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #040928;
+  color: #040928;
+}
+
+.form-container {
+  background-color: #ffffff;
+  margin: 50px auto;
+  width: 400px;
+  border-radius: 30px;
+}
+
+form {
+  padding: 20px;
+}
+
+form h1 {  
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form .input-container {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+form .input-container input, input[type="submit"], #btnCadastrar {
+  width: 100%;
+  border-radius: 25px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+}
+
+input {
+  color: #040928;
+}
+
+input[type="submit"], #btnCadastrar {
+  border: 0;
+  background-color: #cf7712;
+  color: #000000;
+  font-weight: bold;  
+  text-transform: uppercase;
+}
+
+form .input-container input::placeholder {
+  font-size: 15px;
+}
+
+.input-container, #btnCadastrar{
+  text-align: center;
+}
+
+form .input-container input {
+  border: 1px solid rgb(154, 174, 255);
+  padding: 20px;
+} 
+
+.options-container {
+  padding: 0 20px;
+  margin: 20px auto;
+}
+
+.options-container a {
+  color: #cf7712;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+}
