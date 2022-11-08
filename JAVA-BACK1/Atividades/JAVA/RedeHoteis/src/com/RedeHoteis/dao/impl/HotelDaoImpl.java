@@ -51,7 +51,6 @@ public class HotelDaoImpl implements IDao<Hotel> {
         return hotel;
     }
 
-
     @Override
     public List<Hotel> buscarTodos() {
         Connection connection = configuraçaoJDBC.conectarComBD();
