@@ -7,6 +7,7 @@ public class Empresa implements Serializable {
 
     private ArrayList<Funcionario> funcionario;
 
+
     public ArrayList<Funcionario> getFuncionario() {
         return funcionario;
     }

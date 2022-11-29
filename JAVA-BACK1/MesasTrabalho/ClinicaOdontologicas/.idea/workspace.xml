@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f88111ed-9fbc-465e-9aa2-a67c551d49d4" name="Changes" comment="" />
+    <list default="true" id="f88111ed-9fbc-465e-9aa2-a67c551d49d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +21,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Gy4cWtYfAj0Ds8JOCwci2hpoHm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +37,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/José Sousa/OneDrive/Área de Trabalho/apache-log4j-1.2.17/log4j-1.2.17.jar",
+    "last_opened_file_path": "C:/xampp/htdocs/DigitalHouse/JAVA-BACK1/MesasTrabalho/veiculoMCV",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

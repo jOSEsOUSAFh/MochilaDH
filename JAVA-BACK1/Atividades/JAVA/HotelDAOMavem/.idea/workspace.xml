@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b97c4965-a261-4471-971c-56140d1184f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/RedeHoteis/dao/ConfiguraçaoJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/RedeHoteis/dao/IDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/RedeHoteis/dao/impl/HotelDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/RedeHoteis/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/RedeHoteis/service/HotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/HotelServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MesasTrabalho/ClinicaOdontologicas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MesasTrabalho/ClinicaOdontologicas/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/projetos/Projetos-Java/Spring"
+    "last_opened_file_path": "C:/xampp/htdocs/DigitalHouse/JAVA-BACK1/Atividades/JAVA/HotelDAOMavem"
   }
 }]]></component>
   <component name="RecentsManager">

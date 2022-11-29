@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a84996e-0f38-4f55-8783-d4d939ef5851" name="Changes" comment="" />
+    <list default="true" id="6a84996e-0f38-4f55-8783-d4d939ef5851" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Atividades/JAVA/HotelDAOMavem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClinicaOdontologicas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClinicaOdontologicas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Contatos/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Contatos/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Contatos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Contatos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Empresa/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Empresa/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Empresa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Empresa/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +27,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H3M1uml4R3Eol5XBDBcrhaC1Do" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +50,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/José Sousa/OneDrive/Área de Trabalho/h2-2.1.214.jar",
+    "last_opened_file_path": "C:/xampp/htdocs/DigitalHouse/JAVA-BACK1/Atividades/JAVA/ClinicaOdontologica",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
